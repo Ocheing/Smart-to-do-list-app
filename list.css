@@ -1,0 +1,141 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0A192F;
+    /* Deep blue for a rich look */
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Container and Layout */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #ADD8E6;
+    /* Darker blue background */
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #0A192F;
+    /* Neon Blue */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff, 0 0 30px #00f2ff;
+    margin-bottom: 20px;
+
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Primary Button (Add Task) */
+button:nth-child(1) {
+    background-color: #007BFF;
+    color: white;
+}
+
+button:nth-child(1):hover {
+    background-color: #0056b3;
+}
+
+/* Edit Button */
+button:nth-child(2) {
+    background-color: #28A745;
+}
+
+button:nth-child(2):hover {
+    background-color: #1e7e34;
+}
+
+/* Delete Button */
+button:nth-child(3) {
+    background-color: #DC3545;
+}
+
+button:nth-child(3):hover {
+    background-color: #a71d2a;
+}
+
+/* Task Form Styles */
+.form-container {
+    margin: 20px 0;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #4DA8DA;
+    border-radius: 6px;
+    background-color: #1e1e2f;
+    color: white;
+}
+
+input[type="text"]::placeholder {
+    color: #bbb;
+}
+
+/* Textarea (Task Notepad) */
+#taskNotepad {
+    width: 90%;
+    height: 200px;
+    border: 3px solid #007BFF;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    resize: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark Mode Styles for Textarea */
+body.dark-mode #taskNotepad {
+    background-color: #252525;
+    border-color: #4DA8DA;
+}
+
+/* Dark Mode Button */
+#darkModeToggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s;
+}
+
+body.dark-mode #darkModeToggle {
+    color: #4DA8DA;
+}

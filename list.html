@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart To-Do List</title>
+    <link rel="stylesheet" href="list.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>TaskZen</h1>
+            <button id="darkModeToggle">🌙</button>
+        </header>
+
+        <div class="form-container">
+            <input type="text" id="taskInput" placeholder="Got tasks?Lets Start" />
+            <!-- Priority Dropdown -->
+            <select id="prioritySelect">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Task list as a "Notepad" -->
+        <div id="taskNotepad"></div>
+    </div>
+
+    <script src="list.js"></script>
+</body>
+
+</html>
