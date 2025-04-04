@@ -2,8 +2,8 @@ const taskInput = document.getElementById('taskInput');
 const taskNotepad = document.getElementById('taskNotepad');
 const darkModeToggle = document.getElementById('darkModeToggle');
 
-let tasks = []; // Store tasks in an array for easy manipulation
-let selectedTaskIndex = -1; // To track which task is selected for editing
+let tasks = []; 
+let selectedTaskIndex = -1; 
 
 // Toggle Dark Mode
 darkModeToggle.addEventListener('click', () => {
@@ -28,27 +28,27 @@ function addTask() {
     };
 
     if (selectedTaskIndex === -1) {
-        tasks.push(task); // Add new task
+        tasks.push(task); 
     } else {
-        tasks[selectedTaskIndex] = task; // Edit the existing task
-        selectedTaskIndex = -1; // Reset after editing
+        tasks[selectedTaskIndex] = task; 
+        selectedTaskIndex = -1; 
     }
 
     updateTaskList();
-    taskInput.value = ''; // Clear input field
+    taskInput.value = ''; 
 }
 
 // Delete Task Functionality
 function deleteTask(index) {
-    tasks.splice(index, 1); // Remove task from array
-    updateTaskList(); // Update displayed task list
+    tasks.splice(index, 1); 
+    updateTaskList(); 
 }
 
 // Edit Task Functionality
 function editTask(index) {
     const task = tasks[index];
-    taskInput.value = task.text; // Populate input field with selected task
-    selectedTaskIndex = index; // Track task being edited
+    taskInput.value = task.text; 
+    selectedTaskIndex = index; 
 }
 
 // Update the Task List in the Notepad
@@ -81,6 +81,6 @@ function updateTaskList() {
 // Select Task for Editing
 function selectTaskForEdit(index) {
     const task = tasks[index];
-    taskInput.value = task.text; // Populate input field with selected task
-    selectedTaskIndex = index; // Track task being edited
+    taskInput.value = task.text; 
+    selectedTaskIndex = index; 
 }

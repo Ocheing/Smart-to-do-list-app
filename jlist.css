@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0A192F;
-    /* Deep blue for a rich look */
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -22,7 +21,6 @@ body.dark-mode {
     padding: 20px;
     text-align: center;
     background: #ADD8E6;
-    /* Darker blue background */
     border-radius: 12px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
@@ -34,7 +32,6 @@ header {
 h1 {
     font-size: 3rem;
     color: #0A192F;
-    /* Neon Blue */
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
